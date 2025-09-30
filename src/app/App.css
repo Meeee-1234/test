@@ -1,0 +1,254 @@
+/* Modern Theme CSS */
+
+.page-modern {
+  font-family: 'Noto Sans Thai', 'Inter', sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-modern {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.logo-img {
+  border-radius: 8px;
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 12px;
+  color: #10b981;
+}
+
+.nav-modern .nav-link {
+  margin-left: 24px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s, background-color 0.3s, transform 0.2s;
+  border-radius: 6px;
+  color: #334155;
+}
+
+.nav-modern .nav-link:hover {
+  background-color: #10b981;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: #10b981;
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  box-shadow: 0 8px 20px rgba(16,185,129,0.3);
+  transform: translateY(-3px);
+}
+
+.hero-modern {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #10b98188, #3b82f6aa), url('/image/bg-pattern.jpg') no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.hero-cta {
+  font-size: 1.125rem;
+}
+
+.hero-image-wrap {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image {
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.gallery-modern {
+  padding: 80px 0;
+}
+
+.section-title-modern {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1f2937;
+}
+
+.gallery-grid-modern {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.gallery-tile-modern {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-tile-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.gallery-ph-modern {
+  padding: 40px 0;
+  background: #e5e7eb;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.gallery-caption-modern {
+  padding: 16px 0;
+  font-weight: 500;
+  color: #334155;
+  text-align: center;
+}
+
+.pricing-modern {
+  padding: 80px 0;
+}
+
+.pricing-card-modern {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.pricing-table-modern {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table-modern thead tr {
+  background-color: #10b981;
+  color: white;
+}
+
+.pricing-table-modern th, .pricing-table-modern td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.pricing-row-modern:hover td {
+  background-color: #f0fdf4;
+}
+
+.footer-modern {
+  background: #fff;
+  color: #6b7280;
+  text-align: center;
+  padding: 40px 0;
+}
+/* เพิ่มส่วน hero-fullscreen / gallery-fullscreen ให้มันเต็มจอ */
+
+.hero-fullscreen {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.modern-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.modern-lead {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero-cta {
+  font-size: 1.25rem;
+  padding: 12px 24px;
+}
+
+.page-modern-full {
+  font-family: 'Noto Sans Thai', 'Inter', sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+/* อย่าลืม resize responsive */
+@media (max-width: 768px) {
+  .modern-title {
+    font-size: 2.5rem;
+  }
+  .hero-fullscreen {
+    height: auto;
+    padding: 80px 0;
+  }
+}
