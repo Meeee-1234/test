@@ -5,11 +5,14 @@ import { NextResponse } from "next/server";
 import { db } from "../../../lib/db"; 
 import bcrypt from "bcrypt";
 
+export const runtime = 'nodejs';
+
 // validate แบบง่าย
 function isEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
 function isPhone(v) { return /^[0-9]{8,15}$/.test(v); }
 
 export async function POST(req) {
+  
   try {
     let { username, email, phone, password, confirm } = await req.json();
 
