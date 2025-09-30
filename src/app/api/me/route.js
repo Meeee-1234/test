@@ -3,6 +3,8 @@
 import { NextResponse } from "next/server";
 import { verifyToken } from "../../../utils/auth";
 
+export const runtime = "nodejs"; 
+
 export async function GET(req) {
   const cookie = req.headers.get("cookie") || "";
   const m = cookie.match(/(?:^|;\s*)auth=([^;]+)/);

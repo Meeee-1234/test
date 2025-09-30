@@ -3,6 +3,9 @@ import { NextResponse } from "next/server";
 import { db } from "../../../lib/db";
 import { verifyToken } from "../../../utils/auth";
 
+export const runtime = "nodejs"; 
+
+
 function getUserId(req) {
   const cookie = req.headers.get("cookie") || "";
   const m = cookie.match(/(?:^|;\s*)auth=([^;]+)/);

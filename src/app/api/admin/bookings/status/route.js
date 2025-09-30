@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 import { db } from "../../../../../lib/db";         // <- ปรับ path ให้ตรงโปรเจกต์ถ้าแตกต่าง
 import { verifyToken } from "../../../../../utils/auth";
 
+export const runtime = "nodejs"; 
+
 function getAdmin(req) {
   const cookie = req.headers.get("cookie") || "";
   const m = cookie.match(/(?:^|;\s*)auth=([^;]+)/);

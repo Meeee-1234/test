@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { db } from "../../../lib/db";
 import { verifyToken } from "../../../utils/auth";
 
+export const runtime = "nodejs"; 
+
 const OPEN_HOUR = 9, CLOSE_HOUR = 21;
 
 function getUser(req) {

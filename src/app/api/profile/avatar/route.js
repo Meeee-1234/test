@@ -7,6 +7,8 @@ import { verifyToken } from "../../../../utils/auth";
 import { mkdir, writeFile } from "fs/promises";
 import path from "path";
 
+export const runtime = "nodejs"; 
+
 function getUserId(req) {
   const cookie = req.headers.get("cookie") || "";
   const m = cookie.match(/(?:^|;\s*)auth=([^;]+)/);

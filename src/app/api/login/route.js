@@ -4,6 +4,8 @@ import { db } from "../../../lib/db";
 import bcrypt from "bcryptjs";
 import { signUser } from "../../../utils/auth";
 
+export const runtime = "nodejs"; 
+
 // POST /api/login
 export async function POST(req) {
   try {
